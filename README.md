@@ -16,8 +16,8 @@ These instructions will get you a copy of the project and how to test it or run 
 Things you must have installed before you start working with the project:
 
  1- Python 3.5 or python 3.6
----
+-
  2- Keras 1.2.0 or latest
----
+-
  3- Tensorflow 0.12.0 or latest
----
+-
