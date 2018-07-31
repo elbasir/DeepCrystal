@@ -18,7 +18,7 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  3- sklearn <br />
  4- biopython <br />
  5- Tensorflow >= 0.12.0 <br />
- 6- Keras >= 1.2.0
+ 6- Keras 2.1.2
  
 # Run DeepCrystal on a New Test File (Fasta file)
 
