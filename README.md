@@ -31,25 +31,25 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  3- activate your environment <br />
  source activate env-name <br />
  
- 4- install numpy <br />
+ 4- install numpy. Run the following command: <br />
  conda install numpy <br />
  
- 5- install Pandas <br />
+ 5- install Pandas. Run the following command: <br />
  conda install pandas <br />
  
- 6- install sci-kit learn <br />
+ 6- install sci-kit learn. Run the following command: <br />
  conda install -c anaconda scikit-learn <br />
  
- 7- install biopython <br />
+ 7- install biopython. Run the following command: <br />
  conda install biopython <br />
  
- 8- install tensorflow <br />
+ 8- install tensorflow. Run the following command: <br />
  conda install tensorflow <br />
  
- 9- install keras (version 2.1.2) <br />
+ 9- install keras (version 2.1.2). Run the following command: <br />
  conda install keras=2.1.2 <br />
  
- 10- To deactivate a conda evnironment, run the following command: <br />
+ 10- To deactivate a conda evnironment. Run the following command: <br />
  source deactivate env-name
 # Run DeepCrystal on a New Test File (Fasta file)
 
