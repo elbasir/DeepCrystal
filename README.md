@@ -21,6 +21,34 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  6- Tensorflow >= 0.12.0 <br />
  7- Keras 2.1.2
  
+ # Setting up environment using conda
+ 1- Install anaconda using the following command <br />
+ curl -O https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh <br />
+ 
+ 2- Create the environment <br />
+ conda create --name deepCrystal python=3.5 <br />
+ 
+ 3- activate your environment <br />
+ source activate deepCrystal <br />
+ 
+ 4- install numpy <br />
+ conda install numpy <br />
+ 
+ 5- install Pandas <br />
+ conda install pandas <br />
+ 
+ 6- install sci-kit learn <br />
+ conda install -c anaconda scikit-learn <br />
+ 
+ 7- install biopython <br />
+ conda install biopython <br />
+ 
+ 8- install tensorflow <br />
+ conda install tensorflow <br />
+ 
+ 9- install keras (version 2.1.2) <br />
+ conda install keras=2.1.2 <br />
+
 # Run DeepCrystal on a New Test File (Fasta file)
 
 1- Download all the basic pre-requisites before running on new test protein sequences <br />
