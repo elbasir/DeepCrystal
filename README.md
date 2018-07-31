@@ -12,8 +12,8 @@ These instructions will get you a copy of the project and how to test it or run 
 1- Download all the basic prerequisite before trying to test protein sequences <br />
 2- Protein sequences have to be saved in a fasta format similar to following format: <br />
 
-.>Seq1 <br />
-MPKFYCDYCDTYLTHDSPSVRKTHCSGRKHKENVKDYYQKWMEEQAQSLIDKTTAAFQQGK
+   .>Seq1 <br />
+   MPKFYCDYCDTYLTHDSPSVRKTHCSGRKHKENVKDYYQKWMEEQAQSLIDKTTAAFQQGK
 
 
 # Prerequisite
