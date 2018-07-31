@@ -26,10 +26,10 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  curl -O https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh <br />
  
  2- Create the environment <br />
- conda create --name deepCrystal python=3.5 <br />
+ conda create --name env-name python=3.5 <br />
  
  3- activate your environment <br />
- source activate deepCrystal <br />
+ source activate env-name <br />
  
  4- install numpy <br />
  conda install numpy <br />
@@ -48,7 +48,8 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  
  9- install keras (version 2.1.2) <br />
  conda install keras=2.1.2 <br />
-
+ 10- To deactivate a conda evnironment, run the following command: <br />
+ source deactivate env-name
 # Run DeepCrystal on a New Test File (Fasta file)
 
 1- Download all the basic pre-requisites before running on new test protein sequences <br />
