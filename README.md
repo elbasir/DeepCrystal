@@ -39,7 +39,8 @@ python Test.py <file.fasta> <br />
 
 6- The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
 
-   Seq Id, Prediction <br />
+   Sequence ID, Prediction <br />
+   Seq1,        0.7230646491
 
 
 # To Train a Model (Optional)
