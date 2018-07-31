@@ -42,7 +42,9 @@ python Test.py <file.fasta> <br />
    | Sequence ID | Prediction |
    |-------------|------------|
    | Seq1        |0.7230646491|
-
+   | Seq2        |0.6013862848|
+   | Seq3        |0.3028284639|
+   | Seq4        |0.5675689399|
 
 # To Train a Model (Optional)
 
