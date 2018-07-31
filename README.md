@@ -9,7 +9,7 @@ We propose, DeepCrystal, a deep learning framework for sequence-based protein cr
 
 Results: Our model surpasses previous sequence-based protein crystallization predictors in terms of accuracy, precision and recall on three independent test sets. DeepCrystal achieves an average improvement of 3.5% in accuracy, when compared to the state-of-the-art method, Crysalis II. In addition, DeepCrystal attains an average improvement of 2.6% and 3.6% for precision and recall respectively w.r.t Crysalis II on the three independent test sets. <br />
 
-![draft](https://user-images.githubusercontent.com/393716/43463469-4d4b5660-94e1-11e8-979f-7919903f37f6.png "This Architecture is mainly composed of convolutional neural network layers (CNN))
+![draft](https://user-images.githubusercontent.com/393716/43463469-4d4b5660-94e1-11e8-979f-7919903f37f6.png "This Architecture is mainly composed of convolutional neural network layers (CNN)")
 
 # Prerequisite
 
