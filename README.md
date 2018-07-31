@@ -13,7 +13,9 @@ These instructions will get you a copy of the project and how to test it or run 
 2- Protein sequences have to be saved in a fasta format similar to following format: <br />
 
    .>Seq1 <br />
-   MPKFYCDYCDTYLTHDSPSVRKTHCSGRKHKENVKDYYQKWMEEQAQSLIDKTTAAFQQGK
+   MPKFYCDYCDTYLTHDSPSVRKTHCSGRKHKENVKDYYQKWMEEQAQSLIDKTTAAFQQG <br />
+
+where >Seq1 represents the fasta id and the second line is the protein sequence.
 
 
 # Prerequisite
