@@ -48,6 +48,7 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  
  9- install keras (version 2.1.2) <br />
  conda install keras=2.1.2 <br />
+ 
  10- To deactivate a conda evnironment, run the following command: <br />
  source deactivate env-name
 # Run DeepCrystal on a New Test File (Fasta file)
