@@ -9,8 +9,10 @@ Protein structure determination has primarily been performed using X-ray crystal
 
 These instructions will get you a copy of the project and how to test it or run it.
 
-## hello
+## 
 
 # Prerequisite
 
-Things you must have before you start working with the project
+Things you must have before you start working with the project:
+
+## *- Keras
