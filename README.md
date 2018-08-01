@@ -70,7 +70,7 @@ python Test.py <file.fasta> <br />
 
 By using Train.py you can train the model on your own data. Train.py and the fasta file have to be in the same directory. The name of the weight file, json file and the model name all have to be specified by the user and the preferred directory to save them in. <br />
 
-The following is a simple example on how the fasta file should look like: <br />
+A simple example on how the fasta file should look like: <br />
    .>Seq1 Crystallizable <br />
     MERVAVVGVPMDLGANRRGVDMGPSALRYARLLEQLEDLGYTVEDLGDVPVSLARASRRRGRGLAYLEEIRAAALVLKERLAALPEGVFPIVLGGDHSLSMGSVAGAARGRRVGVVWVDAHADFNTPETSPSGNVHGMPLAVLSGLGHPRLTEVFRAVDPKDVVLVGVRSLDPGEKRLLKEAGVRVY <br />
    .>Seq2 Non Crystallizable <br />
