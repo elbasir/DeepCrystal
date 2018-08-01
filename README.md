@@ -12,7 +12,7 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
 ![draft](https://user-images.githubusercontent.com/393716/43463469-4d4b5660-94e1-11e8-979f-7919903f37f6.png)
  
  # Pre-prerequisite
- Be sure the following are installed on your machine: <br />
+ Be sure the following tools are installed on your machine: <br />
  
  * wget, git, unzip <br />
  
