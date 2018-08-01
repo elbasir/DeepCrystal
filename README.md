@@ -25,7 +25,7 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  * conda env create -f environment.yml <br />
  * source activate deepCrystal <br />
  
- * To test deepcrystal on a fasta file, you need to run it while you are inside deepCrystal environment.
+ In order to test DeepCrystal on a fasta file, you need to run it while you are inside deepCrystal environment.
  
 ### To deactivate deepCrystal environment run the following command:
 * source deactivate deepCrystal
