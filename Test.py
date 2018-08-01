@@ -60,11 +60,11 @@ def predictSeqs(embedTest, weights, jsonFiles):
     c = 0
     adam = Adam(lr=0.001)
     for i in range(0, len(weights)):
-        json_file = open(jsonFiles[i], 'r')
+        json_file = open('DeepCrystal_Models/'+jsonFiles[i], 'r')
         model_json = json_file.read()
         json_file.close()
         load_my_model = model_from_json(model_json)
-        load_my_model.load_weights(weights[i])
+        load_my_model.load_weights('DeepCrystal_Models/'+weights[i])
         load_my_model.compile(loss='binary_crossentropy', optimizer=adam, metrics=['accuracy'])
         print("Prediction is in progress, please wait...")
         score = load_my_model.predict(embedTest)
