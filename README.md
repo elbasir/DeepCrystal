@@ -44,7 +44,7 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
 
 where >Seq1 represents the fasta id and the second line is the protein sequence. <br />
 
-2- Download the model files ( all files *.hdf5 and files *.json) from the following link <br />
+2- Download the model files ( all files *.hdf5 and files *.json) by running the following command: <br />
 
 wget https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N/download <br />
 
