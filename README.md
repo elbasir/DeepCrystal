@@ -41,13 +41,15 @@ where >Seq1 represents the fasta id and the second line is the protein sequence.
 
 https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N <br />
 
-3- Put all the downloaded files folder and <file.fasta> in the same directory as Test.py <br />
+3- The files have to be in the folder "DeepCrystal_Models" <br />
 
-4- To test your protein sequences using Test.py run the following command: <br />
+4- Put the downloaded folder and <file.fasta> in the same directory as Test.py <br />
+
+5- To test your protein sequences using Test.py run the following command: <br />
 
 python Test.py <file.fasta> <br />
 
-5- The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
+6- The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
 
    | Sequence ID | Prediction |
    |-------------|------------|
