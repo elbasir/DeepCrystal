@@ -10,47 +10,21 @@ We propose, DeepCrystal, a deep learning framework for sequence-based protein cr
 Results: Our model surpasses previous sequence-based protein crystallization predictors in terms of accuracy, precision and recall on three independent test sets. DeepCrystal achieves an average improvement of 3.5% in accuracy, when compared to the state-of-the-art method, Crysalis II. In addition, DeepCrystal attains an average improvement of 2.6% and 3.6% for precision and recall respectively w.r.t Crysalis II on the three independent test sets. <br />
 
 ![draft](https://user-images.githubusercontent.com/393716/43463469-4d4b5660-94e1-11e8-979f-7919903f37f6.png)
-
-# Prerequisite
-
- 1- Python >= 3.5  <br />
- 2- numpy <br />
- 3- sklearn <br />
- 4- Pandas
- 5- biopython <br />
- 6- Tensorflow >= 0.12.0 <br />
- 7- Keras 2.1.2
  
  # Setting up environment using conda
- 1- Install anaconda using the following command <br />
- curl -O https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh <br />
  
- 2- Create the environment <br />
- conda create --name env-name python=3.5 <br />
+ ### install Anaconda
+ 1- Get anaconda (64 bit)installer python3.x for linux : https://www.anaconda.com/download/#linux <br />
+ 2- Run the installer : bash Anaconda3-5.2.0-Linux-x86_64.sh, and follow the instructions to install anaconda at your        preferred directory.
  
- 3- activate your environment <br />
- source activate env-name <br />
+ ### Creating the environment
+ 1- Run git clone https://github.com/elbasir/DeepCrystal.git <br />
+ 2- Run cd DeepCrystal <br />
+ 3- Run export PATH=<your_anaconda_folder>/bin:$PATH <br />
+ 4- Run conda env create -f environment.yml <br />
+ 5- Run source activate deepCrystal <br /> 
+ 6- To deactivate deepCrystal environment, run source deactivate deepCrystal
  
- 4- install numpy. Run the following command: <br />
- conda install numpy <br />
- 
- 5- install Pandas. Run the following command: <br />
- conda install pandas <br />
- 
- 6- install sci-kit learn. Run the following command: <br />
- conda install -c anaconda scikit-learn <br />
- 
- 7- install biopython. Run the following command: <br />
- conda install biopython <br />
- 
- 8- install tensorflow. Run the following command: <br />
- conda install tensorflow <br />
- 
- 9- install keras (version 2.1.2). Run the following command: <br />
- conda install keras=2.1.2 <br />
- 
- 10- To deactivate a conda evnironment. Run the following command: <br />
- source deactivate env-name
 # Run DeepCrystal on a New Test File (Fasta file)
 
 1- Download all the basic pre-requisites before running on new test protein sequences <br />
@@ -65,7 +39,7 @@ where >Seq1 represents the fasta id and the second line is the protein sequence.
 
 https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N <br />
 
-4- Put all the downloaded files and <file.fasta> in the same directory as Test.py <br />
+4- Put all the downloaded files folder and <file.fasta> in the same directory as Test.py <br />
 
 5- To test your protein sequences using Test.py run the following command: <br />
 
