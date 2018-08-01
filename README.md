@@ -13,17 +13,19 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  
  # Setting up environment using conda
  
- ### install Anaconda
+ ### Install Anaconda
  1- Get anaconda (64 bit)installer python3.x for linux : https://www.anaconda.com/download/#linux <br />
  2- Run the installer : bash Anaconda3-5.2.0-Linux-x86_64.sh, and follow the instructions to install anaconda at your        preferred directory.
  
- ### Creating the environment
+ ### Creating deepCystal environment
  ##### Run the following commands: <br />
  * git clone https://github.com/elbasir/DeepCrystal.git <br />
  * cd DeepCrystal <br />
  * export PATH=<your_anaconda_folder>/bin:$PATH <br />
  * conda env create -f environment.yml <br />
- * source activate deepCrystal <br /> 
+ * source activate deepCrystal <br />
+ 
+ * To test deepcrystal on a fasta file, you need to run it while you are inside deepCrystal environment.
  
 ### To deactivate deepCrystal environment run the following command:
 * source deactivate deepCrystal
