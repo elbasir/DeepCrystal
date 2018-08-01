@@ -11,6 +11,11 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
 
 ![draft](https://user-images.githubusercontent.com/393716/43463469-4d4b5660-94e1-11e8-979f-7919903f37f6.png)
  
+ # Pre-prerequisite
+ Be sure the following are installed on your machine: <br />
+ 
+ * wget, git, unzip <br />
+ 
  # Setting up environment using conda
  
  ### Install Anaconda
@@ -41,11 +46,13 @@ where >Seq1 represents the fasta id and the second line is the protein sequence.
 
 2- Download the model files ( all files *.hdf5 and files *.json) from the following link <br />
 
-https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N <br />
+wget https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N/download <br />
 
-3- The files have to be in the folder "DeepCrystal_Models" <br />
+3- Run the following two commands after downloading the model files: <br />
+* unzip download <br />
+* rm download <br />
 
-4- Put the downloaded folder and <file.fasta> in the same directory as Test.py <br />
+5- Put the unzipped folder, "DeepCrystal_Models"  and <file.fasta> in the same directory as Test.py <br />
 
 5- To test your protein sequences using Test.py run the following command: <br />
 
