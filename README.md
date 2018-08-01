@@ -52,17 +52,19 @@ wget https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N/download
 * unzip download <br />
 * rm download <br />
 
-5- Put the unzipped folder, "DeepCrystal_Models"  and <file.fasta> in the same directory as Test.py <br />
-
-5- To test your protein sequences using Test.py run the following command: <br />
+4- To test your protein sequences using Test.py run the following command: <br />
 
 python Test.py <file.fasta> <br />
 
-6- The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
+5- The output will be generated in the current working directory. The name of the output file is prediction_results.csv. <br />
 
    | Sequence ID | Prediction |
    |-------------|------------|
    | Seq1        |0.7230646491|
+   
+6- If you run on test.fasta that's uploaded on this github, you can compare the results with the Expected_Prediction_Result.csv that's also uploaded on this github. <br />
+
+7- When you run Test.py, you will see some warnings which will not affect your results. Examples of these warnings are in expected_warnings.txt
 
 # To Train a Model (Optional)
 
