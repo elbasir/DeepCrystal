@@ -19,12 +19,12 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  
  ### Creating the environment
  Run the following commands: <br />
- > git clone https://github.com/elbasir/DeepCrystal.git <br />
- > cd DeepCrystal <br />
- > Run export PATH=<your_anaconda_folder>/bin:$PATH <br />
-> Run conda env create -f environment.yml <br />
- 5- Run source activate deepCrystal <br /> 
- 6- To deactivate deepCrystal environment, run source deactivate deepCrystal
+ >git clone https://github.com/elbasir/DeepCrystal.git <br />
+ >cd DeepCrystal <br />
+ >export PATH=<your_anaconda_folder>/bin:$PATH <br />
+ >conda env create -f environment.yml <br />
+ >source activate deepCrystal <br /> 
+ To deactivate deepCrystal environment, run source deactivate deepCrystal
  
 # Run DeepCrystal on a New Test File (Fasta file)
 
