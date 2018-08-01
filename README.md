@@ -30,24 +30,24 @@ Results: Our model surpasses previous sequence-based protein crystallization pre
  
 # Run DeepCrystal on a New Test File (Fasta file)
 
-* Protein sequences have to be saved in a fasta format similar to following format: <br />
+1- Protein sequences have to be saved in a fasta format similar to following format: <br />
 
    .>Seq1 <br />
    MPKFYCDYCDTYLTHDSPSVRKTHCSGRKHKENVKDYYQKWMEEQAQSLIDKTTAAFQQG <br />
 
 where >Seq1 represents the fasta id and the second line is the protein sequence. <br />
 
-* Download the model files ( all files *.hdf5 and files *.json) from the following link <br />
+2- Download the model files ( all files *.hdf5 and files *.json) from the following link <br />
 
 https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N <br />
 
-* Put all the downloaded files folder and <file.fasta> in the same directory as Test.py <br />
+3- Put all the downloaded files folder and <file.fasta> in the same directory as Test.py <br />
 
-* To test your protein sequences using Test.py run the following command: <br />
+4- To test your protein sequences using Test.py run the following command: <br />
 
 python Test.py <file.fasta> <br />
 
-* The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
+5- The output will be generated in the current working directory. The name of the output file is prediction_results.csv <br />
 
    | Sequence ID | Prediction |
    |-------------|------------|
