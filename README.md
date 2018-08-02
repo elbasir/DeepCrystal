@@ -54,7 +54,7 @@ wget https://storage.entrydns.org/nextcloud/index.php/s/3ErNEaZiKp39x4N/download
 
 4- To test your protein sequences using Test.py run the following command: <br />
 
-python Test.py <file.fasta> <br />
+$ python Test.py <file.fasta> <br />
 
 5- The output will be generated in the current working directory. The name of the output file is prediction_results.csv. <br />
 
@@ -68,10 +68,15 @@ python Test.py <file.fasta> <br />
 
 # To Train a Model (Optional)
 
-By using Train.py you can train the model on your own data. Train.py and the fasta file have to be in the same directory. The name of the weight file, json file and the model name all have to be specified by the user and the preferred directory to save them in. <br />
+* Using the same environment.yml, you can train your own data using Train.py <br />
+
+* Using the same environment.yml, you can run Train.py to train the model on your own data. Train.py and the fasta file have to be in the same directory . <br />
+
+* Example of how to train the model on your own data, run the following command: <br />
+ $ python Train.py <file.fasta>
 
 A simple example on how the fasta file should look like: <br />
-   .>Seq1 Crystallizable <br />
+   .>Seq1 Crystallizable <br />  <br />
     MERVAVVGVPMDLGANRRGVDMGPSALRYARLLEQLEDLGYTVEDLGDVPVSLARASRRRGRGLAYLEEIRAAALVLKERLAALPEGVFPIVLGGDHSLSMGSVAGAARGRRVGVVWVDAHADFNTPETSPSGNVHGMPLAVLSGLGHPRLTEVFRAVDPKDVVLVGVRSLDPGEKRLLKEAGVRVY <br />
    .>Seq2 Non Crystallizable <br />
     MPRSLKKGVFVDDHLLEKVLELNAKGEKRLIKTWSRRSTIVPEMVGHTIAVYNGKQHVPVYITENMVGHKLGEFAPTRTYRGHGKEAKATKKK <br />
