@@ -68,7 +68,7 @@ $ python Test.py <file.fasta> <br />
 
 # To Train a Model (Optional)
 
-* following the same steps as in the section of Creating deepCystal environment , you can train your own data using Train.py <br />
+* following the same steps as in the section "Creating deepCystal environment" , you can train your own data using Train.py <br />
 
 * Train.py and the fasta file have to be in the same directory . <br />
 
