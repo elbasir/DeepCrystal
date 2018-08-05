@@ -128,57 +128,57 @@ for counter in range(1, 11):
     x = Embedding(output_dim=50, input_dim=22, input_length=800)(main_input)
 
     a = Convolution1D(64, 2, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    apool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(a)
+    apool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(a)
 
     b = Convolution1D(64, 3, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    bpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(b)
+    bpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(b)
 
     c = Convolution1D(64, 8, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    cpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(c)
+    cpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(c)
 
     d = Convolution1D(64, 9, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    dpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(d)
+    dpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(d)
 
 
     f = Convolution1D(64, 4, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    fpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(f)
+    fpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(f)
 
     g = Convolution1D(64, 5, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    gpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(g)
+    gpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(g)
 
     h = Convolution1D(64, 6, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    hpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(h)
+    hpool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(h)
 
     i = Convolution1D(64, 7, activation='relu', border_mode='same', W_regularizer=l2(l2value))(x)
-    ipool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(i)
+    ipool = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(i)
 
 
     merge2 = merge([apool, bpool, cpool, dpool,fpool,gpool,hpool, ipool], mode='concat', concat_axis=-1)
     merge2 = Dropout(0.3)(merge2)
 
     scalecnn1 = Convolution1D(64, 11, activation='relu', border_mode='same', W_regularizer=l2(l2value))(merge2)
-    scale1 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(scalecnn1)
+    scale1 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(scalecnn1)
 
 
     scalecnn2 = Convolution1D(64, 13, activation='relu', border_mode='same', W_regularizer=l2(l2value))(merge2)
-    scale2 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(scalecnn2)
+    scale2 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(scalecnn2)
 
 
     scalecnn3 = Convolution1D(64, 15, activation='relu', border_mode='same', W_regularizer=l2(l2value))(merge2)
-    scale3 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(scalecnn3)
+    scale3 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(scalecnn3)
 
     scale = merge([scale1, scale2, scale3], mode='concat', concat_axis=-1)
 
     scale = Dropout(0.3)(scale)
 
     cnn1 = Convolution1D(64, 5, activation='relu', border_mode='same', W_regularizer=l2(l2value))(scale)
-    cnn10 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(cnn1)
+    cnn10 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(cnn1)
 
     cnn2 = Convolution1D(64, 9, activation='relu', border_mode='same', W_regularizer=l2(l2value))(scale)
-    cnn20 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(cnn2)
+    cnn20 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(cnn2)
 
     cnn3 = Convolution1D(64, 13, activation='relu', border_mode='same', W_regularizer=l2(l2value))(scale)
-    cnn30 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode=border)(cnn3)
+    cnn30 = MaxPooling1D(pool_length=pl, stride=stride_max, border_mode='same')(cnn3)
 
     cnn50 = merge([cnn10, cnn20, cnn30], mode='concat', concat_axis=-1)
 
