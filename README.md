@@ -3,12 +3,12 @@ A Deep Learning Framework for sequence-based Protein Crystallization Prediction
 
 # Abstract
 
-# Motivation:
+### Motivation:
 Protein structure determination has primarily been performed using X-ray crystallography. To overcome the expensive cost, high attrition rate and series of trial-and-error settings, many in-silico methods have been developed to predict crystallization propensities of proteins based on their sequences. However, majority of these methods build their predictors by extracting features from protein sequences which is computationally expensive and can explode the feature space. <br />
 
 We propose, DeepCrystal, a deep learning framework for sequence-based protein crystallization prediction. It uses deep learning to identify proteins which can produce diffraction quality crystals without the need to manually engineer additional biochemical and structural features from sequences. Our model is based on Convolutional Neural Networks (CNNs) which can exploit k-mer structure and interaction among sets of k-mers from the raw protein sequences. <br/>
 
-# Results:
+### Results:
 Our model surpasses previous sequence-based protein crystallization predictors in terms of
 recall, F-score, accuracy and MCC on three independent test sets. DeepCrystal achieves an average
 improvement of 1.4%, 12.1% in recall, when compared to its closest competitors, Crysalis II and Crysf
