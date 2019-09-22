@@ -114,12 +114,6 @@ l2value = 0.001
 stride_ = 1
 stride_max = 1
 border = 'same'
-lr = 0.001
-pl = 5
-l2value = 0.001
-stride_ = 1
-stride_max = 1
-border = 'same'
 
 for counter in range(1, 11):
     
