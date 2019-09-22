@@ -6,15 +6,12 @@ import io
 from keras.preprocessing.sequence import pad_sequences
 from keras.preprocessing import sequence
 from keras.models import Model
-from keras.layers import Dense,Dropout, Input, Convolution1D, MaxPooling1D, Flatten
+from keras.layers import Dense,Dropout, Input, Convolution1D, MaxPooling1D, Flatten, merge, AveragePooling1D
 from keras.layers.embeddings import Embedding
 from keras.layers.merge import Concatenate
 from keras.optimizers import Adam
-from keras.layers import  merge
 from keras.regularizers import l2
-from keras.layers import AveragePooling1D
-from sklearn.utils import shuffle
-from sklearn.utils import class_weight
+from sklearn.utils import shuffle, class_weight
 from keras.callbacks import ModelCheckpoint
 from sklearn import metrics
 from keras.models import model_from_json
