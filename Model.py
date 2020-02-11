@@ -1,31 +1,23 @@
 import numpy as np
 np.random.seed(1337)
-from keras.models import load_model
 import pandas as pd
 import io
+from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 from keras.preprocessing import sequence
 from keras.models import Sequential, Model
-from keras.layers import Dense, Dropout, Input, Convolution1D, MaxPooling1D, Flatten
+from keras.layers import Dense, Dropout, Input, Convolution1D, MaxPooling1D, Flatten, merge, AveragePooling1D
 from keras.layers.embeddings import Embedding
 from keras.layers.merge import Concatenate
 from keras.optimizers import Adam
-from keras.layers import  merge
 from keras.regularizers import l2
-from keras.layers import AveragePooling1D
-from sklearn.utils import shuffle
-from sklearn.utils import class_weight
 from keras.callbacks import ModelCheckpoint
+from sklearn.utils import shuffle, class_weight
 from sklearn import metrics
 from sklearn.metrics import confusion_matrix
-import matplotlib.pyplot as plt
 import pylab
 import itertools
-from sklearn.metrics import matthews_corrcoef
-from sklearn.metrics import average_precision_score
-from sklearn.metrics import precision_recall_curve
-from sklearn.metrics import roc_auc_score
-from keras.models import model_from_json
+
 
 lr = 0.001 # Learning rate
 pl = 5 
