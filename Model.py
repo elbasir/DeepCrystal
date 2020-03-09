@@ -1,5 +1,5 @@
 import numpy as np
-np.random.seed(133)
+np.random.seed(1337)
 import pandas as pd
 import io
 from keras.models import load_model
