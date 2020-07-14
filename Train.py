@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as n
 np.random.seed(1337)
 from keras.models import load_model
 import pandas as pd
