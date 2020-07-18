@@ -1,7 +1,7 @@
 
 
 
-import numpy as nps
+import numpy as np
 np.random.seed(1337)
 from keras.models import load_model
 import pandas as pd
