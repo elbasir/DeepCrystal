@@ -1,5 +1,4 @@
 # DeepCrystal
-A Deep Learning Framework for sequence-based Protein Crystallization Prediction
 
 # Abstract
 
